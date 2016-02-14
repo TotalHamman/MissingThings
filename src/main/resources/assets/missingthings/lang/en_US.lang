@@ -1,0 +1,5 @@
+item.sleeping_bag.name=Sleeping Bag
+item.hang_glider.name=Hang Glider
+item.flight_ring.name=Ring of Flight
+
+itemGroup.tabMissing=Missing Things
