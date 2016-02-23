@@ -1,8 +1,12 @@
 package totalhamman.missingthings.items;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import totalhamman.missingthings.MissingThings;
+
+import java.util.List;
 
 public class ItemSleepingBag extends Item {
 
@@ -16,4 +20,9 @@ public class ItemSleepingBag extends Item {
     }
 
 //    TODO Add sleeping bag code
+
+    @Override
+    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean bool) {
+        list.add("Not Yet Implemented");
+    }
 }
