@@ -32,7 +32,7 @@ public class ServerEventHandler {
                 InventoryBaubles baubles = PlayerHandler.getPlayerBaubles(player);
                 if(baubles.getStackInSlot(1) == null || baubles.getStackInSlot(1).getItem() != ModItems.flightRing) {
                     if(baubles.getStackInSlot(2) == null || baubles.getStackInSlot(2).getItem() != ModItems.flightRing) {
-                        if(player.capabilities.allowFlying == true) {
+                        if(player.capabilities.allowFlying) {
                             player.capabilities.allowFlying = false;
                             player.capabilities.isFlying = false;
                         }
