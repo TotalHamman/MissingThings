@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import totalhamman.missingthings.MissingThings;
 
-public class ItemFlightRing extends _ItemBauble {
+public class ItemFlightRing extends ItemBauble {
 
     public ItemFlightRing() {
         super();
@@ -19,20 +19,23 @@ public class ItemFlightRing extends _ItemBauble {
 
     @Override
     public void onUnequipped(ItemStack stack, EntityLivingBase player) {
-        EntityPlayer p = (EntityPlayer) player;
+        super.onUnequipped(stack, player);
 
+/*        EntityPlayer p = (EntityPlayer) player;
         p.capabilities.allowFlying = false;
         p.capabilities.isFlying = false;
-        p.capabilities.disableDamage = false;
+        p.capabilities.disableDamage = false;*/
     }
 
     @Override
     public void onEquipped(ItemStack stack, EntityLivingBase player) {
         super.onEquipped(stack, player);
 
-        EntityPlayer p = (EntityPlayer) player;
+/*        EntityPlayer p = (EntityPlayer) player;
         p.capabilities.allowFlying = true;
         p.capabilities.disableDamage = true;
+
+        ((EntityPlayer) player).sendPlayerAbilities();*/
     }
 
     @Override
@@ -44,7 +47,9 @@ public class ItemFlightRing extends _ItemBauble {
     public void onWornTick(ItemStack stack, EntityLivingBase player) {
         if (player instanceof EntityPlayer) {
             EntityPlayer p = (EntityPlayer) player;
-
+            if (!p.capabilities.allowFlying) {
+                p.capabilities.allowFlying = true;
+            }
         }
     }
 }

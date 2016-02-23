@@ -2,4 +2,6 @@ item.sleeping_bag.name=Sleeping Bag
 item.hang_glider.name=Hang Glider
 item.flight_ring.name=Ring of Flight
 
+tile.floating_block.name=Floating Block
+
 itemGroup.tabMissing=Missing Things

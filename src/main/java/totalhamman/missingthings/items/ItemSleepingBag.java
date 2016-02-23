@@ -15,5 +15,5 @@ public class ItemSleepingBag extends Item {
         GameRegistry.registerItem(this, this.getUnlocalizedName().substring(5));
     }
 
-
+//    TODO Add sleeping bag code
 }

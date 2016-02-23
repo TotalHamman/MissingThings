@@ -4,7 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import totalhamman.missingthings.items._ModItems;
+import totalhamman.missingthings.items.ModItems;
 
 public class CreativeTab extends CreativeTabs {
 
@@ -17,7 +17,7 @@ public class CreativeTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem () {
-        return _ModItems.sleepingBag;
+        return ModItems.sleepingBag;
     }
 
 }

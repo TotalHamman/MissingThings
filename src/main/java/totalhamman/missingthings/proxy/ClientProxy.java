@@ -3,9 +3,11 @@ package totalhamman.missingthings.proxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import totalhamman.missingthings.items._ItemMod;
+import totalhamman.missingthings.blocks.BlockMod;
+import totalhamman.missingthings.items.ItemMod;
 
-import static totalhamman.missingthings.items._ModItems.*;
+import static totalhamman.missingthings.items.ModItems.*;
+import static totalhamman.missingthings.blocks.ModBlocks.*;
 
 public class ClientProxy extends CommonProxy {
     @Override
@@ -17,9 +19,10 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent e) {
         super.init(e);
 
-        _ItemMod.registerItemRender(sleepingBag);
-        _ItemMod.registerItemRender(hangGlider);
-        _ItemMod.registerItemRender(flightRing);
+        ItemMod.initModel(sleepingBag);
+        ItemMod.initModel(hangGlider);
+        ItemMod.initModel(flightRing);
+        BlockMod.initModel(floatingBlock);
     }
 
     @Override
