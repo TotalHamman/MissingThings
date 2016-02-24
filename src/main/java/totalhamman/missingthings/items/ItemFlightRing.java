@@ -20,22 +20,11 @@ public class ItemFlightRing extends ItemBauble {
     @Override
     public void onUnequipped(ItemStack stack, EntityLivingBase player) {
         super.onUnequipped(stack, player);
-
-/*        EntityPlayer p = (EntityPlayer) player;
-        p.capabilities.allowFlying = false;
-        p.capabilities.isFlying = false;
-        p.capabilities.disableDamage = false;*/
     }
 
     @Override
     public void onEquipped(ItemStack stack, EntityLivingBase player) {
         super.onEquipped(stack, player);
-
-/*        EntityPlayer p = (EntityPlayer) player;
-        p.capabilities.allowFlying = true;
-        p.capabilities.disableDamage = true;
-
-        ((EntityPlayer) player).sendPlayerAbilities();*/
     }
 
     @Override

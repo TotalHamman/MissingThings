@@ -7,15 +7,17 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
+import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import totalhamman.missingthings.MissingThings;
 import totalhamman.missingthings.items.ModItems;
 
 public class ServerEventHandler {
 
     public static class EventHandler {
         @SubscribeEvent
-        public void fbPlayerInteractBlock(PlayerInteractEvent event) {
-//            MissingThings.log.info("PlayerInteractEvent");
+        public void fbOnPlayerInteract(PlayerInteractEvent event) {
             if (event.action == PlayerInteractEvent.Action.LEFT_CLICK_BLOCK) {
                 Block block = event.world.getBlockState(event.pos).getBlock();
                 if (block.getUnlocalizedName().equals("tile.floating_block")) {

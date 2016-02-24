@@ -17,7 +17,7 @@ public class ModCraftingRecipes {
                 'G', "ingotGold",
                 'N', new ItemStack(Items.nether_star));
 
-        addShapedRecipe(new ItemStack(ModItems.sleepingBag),
+        addShapedRecipe(new ItemStack(ModBlocks.sleepingBag),
                 "   ", "CC ", "WWW",
                 'C', new ItemStack(Blocks.carpet),
                 'W', new ItemStack(Blocks.wool));
