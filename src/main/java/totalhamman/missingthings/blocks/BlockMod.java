@@ -19,7 +19,6 @@ public class BlockMod extends Block {
     }
 
     public static void initModel(Block block) {
-//        MissingThings.log.debug("Register Block Render - " + block.getUnlocalizedName().substring(5));
         ModelResourceLocation modelRL = new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory");
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, modelRL);
 
