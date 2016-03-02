@@ -8,6 +8,7 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
+import totalhamman.missingthings.MissingThings;
 
 public class ItemFloatingBlock extends ItemBlock {
 
@@ -26,7 +27,10 @@ public class ItemFloatingBlock extends ItemBlock {
 
         Vec3 look = player.getLookVec();
         double m = Math.max(Math.max(Math.abs(look.xCoord), Math.abs(look.yCoord)), Math.abs(look.zCoord));
+        
+        //MissingThings.log.info("Look: "+look.toString()+" | x: "+x+" | y: "+y+" | z: "+z+" | m: "+m);
 
+        // Set initial Placement Vector Offset from Player Head
         if (look.yCoord == m) {
             y = (int)(Math.ceil(player.posY) + 2.0);
         } else if (- look.yCoord == m) {
@@ -39,6 +43,21 @@ public class ItemFloatingBlock extends ItemBlock {
             z = (int)(Math.floor(player.posZ) + 2.0);
         } else if (- look.zCoord == m) {
             z = (int)(Math.floor(player.posZ) - 2.0);
+        }
+        
+        // Adjust Initial Placement Vector Offset to include Diagonal placement
+        if (look.yCoord > 0.35 && look.yCoord < 0.65) {
+        	y += 1;
+        } else if (look.yCoord < -0.35 && look.yCoord > -0.65) {
+        	y -= 1;
+        } else if (look.xCoord > 0.35 && look.xCoord < 0.65) {
+        	x += 1;
+        } else if (look.xCoord < -0.35 && look.xCoord > -0.65) {
+        	x -= 1;
+        } else if (look.zCoord > 0.35 && look.zCoord < 0.65) {
+        	z += 1;
+        } else if (look.zCoord < -0.35 && look.zCoord > -0.65) {
+        	z -= 1;
         }
 
         BlockPos position = new BlockPos(x, y, z);
