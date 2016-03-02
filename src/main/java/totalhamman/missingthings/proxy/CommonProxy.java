@@ -15,7 +15,7 @@ public class CommonProxy {
         ModBlocks.init();
         ModCraftingRecipes.init();
 
-        MinecraftForge.EVENT_BUS.register(new ServerEventHandler.EventHandler());
+        //MinecraftForge.EVENT_BUS.register(new ServerEventHandler.EventHandler());
     }
 
     public void init(FMLInitializationEvent e) {
