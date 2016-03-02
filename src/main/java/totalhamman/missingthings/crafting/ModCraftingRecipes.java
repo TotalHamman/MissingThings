@@ -7,12 +7,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 import totalhamman.missingthings.blocks.ModBlocks;
+import totalhamman.missingthings.equipment.ModEquipment;
 import totalhamman.missingthings.items.ModItems;
 
 public class ModCraftingRecipes {
     public static void init() {
 
-        addShapedRecipe(new ItemStack(ModItems.flightRing),
+        addShapedRecipe(new ItemStack(ModEquipment.flightRing),
                 "NGN", "G G", " G ",
                 'G', "ingotGold",
                 'N', new ItemStack(Items.nether_star));
