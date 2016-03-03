@@ -2,7 +2,7 @@
 {
   "modid": "missingthings",
   "name": "MissingThings",
-  "description": "Mod that adds some missing items to 1.8.9..",
+  "description": "Mod that adds some missing items to 1.8.9.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
