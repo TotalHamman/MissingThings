@@ -10,6 +10,7 @@ import totalhamman.missingthings.equipment.ModEquipment;
 import totalhamman.missingthings.handler.ServerEventHandler;
 import totalhamman.missingthings.items.ModItems;
 import totalhamman.missingthings.materials.ModMaterials;
+import totalhamman.missingthings.world.NetherOreGenerator;
 
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
@@ -23,7 +24,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent e) {
-
+        NetherOreGenerator.init();
     }
 
     public void postInit(FMLPostInitializationEvent e) {

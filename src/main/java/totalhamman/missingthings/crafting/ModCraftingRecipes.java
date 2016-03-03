@@ -11,6 +11,8 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 import totalhamman.missingthings.blocks.ModBlocks;
 import totalhamman.missingthings.equipment.ModEquipment;
 import totalhamman.missingthings.items.ModItems;
+import totalhamman.missingthings.materials.MaterialMod;
+import totalhamman.missingthings.materials.MaterialRoughDiamond;
 import totalhamman.missingthings.materials.ModMaterials;
 
 public class ModCraftingRecipes {
@@ -21,10 +23,10 @@ public class ModCraftingRecipes {
                 'G', "ingotGold",
                 'N', new ItemStack(Items.nether_star));
 
-        addShapedRecipe(new ItemStack(ModBlocks.sleepingBag),
+       /* addShapedRecipe(new ItemStack(ModBlocks.sleepingBag),
                 "   ", "CC ", "WWW",
                 'C', new ItemStack(Blocks.carpet),
-                'W', new ItemStack(Blocks.wool));
+                'W', new ItemStack(Blocks.wool));*/
 
         addShapedRecipe(new ItemStack(ModItems.hangGlider),
                 " L ", "LLL", "LSL",
@@ -36,6 +38,10 @@ public class ModCraftingRecipes {
                 'O', new ItemStack(Blocks.obsidian),
                 'N', new ItemStack(Items.nether_star),
                 'F', new ItemStack(Items.feather));
+
+        addShapedRecipe(new ItemStack(ModMaterials.roughDiamondGem),
+                " G ", "GGG", " G ",
+                'G', new ItemStack(ModMaterials.roughDiamond));
 
         addShapelessRecipe(new ItemStack(ModBlocks.bedrockSand),
                 Blocks.sand, ModMaterials.bedrockShard);

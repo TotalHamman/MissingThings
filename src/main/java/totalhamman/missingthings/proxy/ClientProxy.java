@@ -28,10 +28,14 @@ public class ClientProxy extends CommonProxy {
         MissingThings.log.debug("Init Models");
 
         ItemMod.initModel(hangGlider);
+       // BlockMod.initModel(sleepingBag);
         BlockMod.initModel(floatingBlock);
-        BlockMod.initModel(sleepingBag);
         BlockMod.initModel(bedrockGlass);
+        BlockMod.initModel(bedrockSand);
+        BlockMod.initModel(roughDiamondOre);
         MaterialMod.initModel(bedrockShard);
+        MaterialMod.initModel(roughDiamond);
+        MaterialMod.initModel(roughDiamondGem);
         EquipmentMod.initModel(flightRing);
     }
 
