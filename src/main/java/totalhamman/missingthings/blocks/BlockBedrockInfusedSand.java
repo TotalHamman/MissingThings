@@ -7,6 +7,7 @@ public class BlockBedrockInfusedSand extends BlockMod {
 
 	public BlockBedrockInfusedSand() {
 		super(Material.sand, "bedrock_sand");
+		this.setStepSound(soundTypeSand);
 		GameRegistry.registerBlock(this, this.getUnlocalizedName().substring(5));		
 	}
 }

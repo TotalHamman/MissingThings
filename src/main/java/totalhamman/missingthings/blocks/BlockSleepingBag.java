@@ -12,8 +12,8 @@ public class BlockSleepingBag extends BlockBed {
 
     public BlockSleepingBag () {
         super();
-
         this.setUnlocalizedName("sleeping_bag");
+        this.setStepSound(soundTypeCloth);
         GameRegistry.registerBlock(this, this.getUnlocalizedName().substring(5));
     }
 

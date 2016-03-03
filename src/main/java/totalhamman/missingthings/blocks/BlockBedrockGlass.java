@@ -1,6 +1,7 @@
 package totalhamman.missingthings.blocks;
 
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.Explosion;
@@ -17,6 +18,7 @@ public class BlockBedrockGlass extends BlockMod {
 		super(Material.rock, "bedrock_glass");
 		this.setHardness(50);
 		this.setResistance(2000.0F);
+		this.setStepSound(soundTypeGlass);
         GameRegistry.registerBlock(this, this.getUnlocalizedName().substring(5));
 	}
 	

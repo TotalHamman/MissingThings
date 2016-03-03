@@ -24,3 +24,4 @@ src/main/resources/assets/missingthings/models/item/_makei.bat
 src/main/resources/assets/missingthings/models/block/_makeb.bat
 libs/Baubles-1.8.9-1.1.3.0-deobf.jar
 build.gradle.old
+TODO.md

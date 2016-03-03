@@ -13,6 +13,7 @@ public class BlockFloatingBlock extends BlockMod {
 
     public BlockFloatingBlock() {
         super(Material.cactus, "floating_block");
+        this.setStepSound(soundTypeStone);
         MinecraftForge.EVENT_BUS.register(this);
         GameRegistry.registerBlock(this, ItemFloatingBlock.class, this.getUnlocalizedName().substring(5));
     }
