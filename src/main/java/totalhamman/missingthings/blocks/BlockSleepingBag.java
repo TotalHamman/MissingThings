@@ -17,8 +17,6 @@ public class BlockSleepingBag extends BlockBed {
         GameRegistry.registerBlock(this, this.getUnlocalizedName().substring(5));
     }
 
-//    TODO Add sleeping_bag Block code
-
     @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing side, float hitX, float hitY, float hitZ) {
         return super.onBlockActivated(world, pos, state, player, side, hitX, hitY, hitZ);

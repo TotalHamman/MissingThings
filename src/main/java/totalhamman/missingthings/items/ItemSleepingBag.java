@@ -18,8 +18,6 @@ public class ItemSleepingBag extends ItemBed {
         this.setCreativeTab(MissingThings.tabMissing);
     }
 
-//    TODO Add sleeping_bag Item code
-
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean bool) {
         list.add("Not Yet Implemented");

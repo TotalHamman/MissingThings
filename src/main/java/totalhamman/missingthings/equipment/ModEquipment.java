@@ -5,8 +5,6 @@ import totalhamman.missingthings.MissingThings;
 
 public class ModEquipment {
 
-	//  TODO Add Potion Belt
-	
 	public static Item flightRing;
 	
 	public static void init() {

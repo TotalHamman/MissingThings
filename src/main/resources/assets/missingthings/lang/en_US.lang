@@ -1,7 +1,10 @@
 item.sleeping_bag.name=Sleeping Bag
 item.hang_glider.name=Hang Glider
 item.flight_ring.name=Ring of Flight
+item.bedrock_shard.name=Bedrock Shard
 
 tile.floating_block.name=Floating Block
+tile.bedrock_glass.name=Bedrock Glass
+tile.bedrock_sand.name=Bedrock Infused Sand
 
 itemGroup.tabMissing=Missing Things

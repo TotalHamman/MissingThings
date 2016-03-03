@@ -4,8 +4,6 @@ import net.minecraft.item.Item;
 import totalhamman.missingthings.MissingThings;
 
 public final class ModItems {
-	
-	//  TODO Add Bedrock Chisel, PotionBelt, Mod Book, Void Bag, Backpack
 
     public static Item hangGlider;
 

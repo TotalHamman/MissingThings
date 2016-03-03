@@ -2,7 +2,10 @@ package totalhamman.missingthings.blocks;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.BlockPos;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import totalhamman.missingthings.items.ItemBedrockGlass;
@@ -17,10 +20,18 @@ public class BlockBedrockGlass extends BlockMod {
         GameRegistry.registerBlock(this, this.getUnlocalizedName().substring(5));
 	}
 	
-	public boolean canEntityDestroy(IBlockAccess world, int x, int y, int z, Entity entity) {
+	public boolean canEntityDestroy(IBlockAccess world, BlockPos pos, Entity entity) {
 		return false;
 	}
-	
 
+	@Override
+	public void onBlockExploded(World world,  BlockPos pos, Explosion explosion) {
+		// NO-OP
+	}
+
+	@Override
+	public boolean canDropFromExplosion(Explosion explosion) {
+		return false;
+	}
 	
 }

@@ -19,8 +19,6 @@ public class ItemHangGlider extends Item {
         GameRegistry.registerItem(this, this.getUnlocalizedName().substring(5));
     }
 
-//    TODO Add hang glider code
-
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean bool) {
         list.add("Not Yet Implemented");
