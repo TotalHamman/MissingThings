@@ -1,7 +1,7 @@
 package totalhamman.missingthings.blocks;
 
 import totalhamman.missingthings.MissingThings;
-import totalhamman.missingthings.blocks.ore.BlockRoughDiamondOre;
+import totalhamman.missingthings.blocks.ore.BlockNetherDiamondOre;
 
 public class ModBlocks {
 
@@ -9,7 +9,7 @@ public class ModBlocks {
     public static BlockFloatingBlock floatingBlock;
     public static BlockBedrockGlass bedrockGlass; 
     public static BlockBedrockInfusedSand bedrockSand;
-    public static BlockRoughDiamondOre roughDiamondOre;
+    public static BlockNetherDiamondOre netherDiamondOre;
 
     public static void init() {
         MissingThings.log.debug("Creating Blocks");
@@ -17,7 +17,7 @@ public class ModBlocks {
         floatingBlock = new BlockFloatingBlock();
         bedrockGlass = new BlockBedrockGlass();
         bedrockSand = new BlockBedrockInfusedSand();
-        roughDiamondOre = new BlockRoughDiamondOre();
+        netherDiamondOre = new BlockNetherDiamondOre();
         
     }
 }

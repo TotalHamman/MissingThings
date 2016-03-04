@@ -1,5 +1,5 @@
 {
-	"parent": "missingthings:block/rough_diamond_ore",
+	"parent": "missingthings:block/nether_diamond_ore",
 	"display": {
 		"thirdperson": {
 			"rotation": [ 10, -45, 170 ],

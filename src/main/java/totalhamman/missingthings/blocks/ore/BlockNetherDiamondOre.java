@@ -9,10 +9,10 @@ import totalhamman.missingthings.items.ModItems;
 
 import java.util.Random;
 
-public class BlockRoughDiamondOre extends BlockMod {
+public class BlockNetherDiamondOre extends BlockMod {
 
-    public BlockRoughDiamondOre() {
-        super(Material.rock, "rough_diamond_ore");
+    public BlockNetherDiamondOre() {
+        super(Material.rock, "nether_diamond_ore");
         this.setHarvestLevel("pickaxe", 3);
         this.setHardness(9.0F);
         this.setStepSound(soundTypeStone);
@@ -21,7 +21,7 @@ public class BlockRoughDiamondOre extends BlockMod {
 
     @Override
     public Item getItemDropped(IBlockState state, Random random, int fortune) {
-        return ModItems.roughDiamond;
+        return ModItems.netherDiamond;
     }
 
     @Override

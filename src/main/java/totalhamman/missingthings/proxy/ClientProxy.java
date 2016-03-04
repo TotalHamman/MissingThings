@@ -26,14 +26,14 @@ public class ClientProxy extends CommonProxy {
         ItemMod.initModel(hangGlider);
         ItemMod.initModel(bedrockChisel);
         ItemMod.initModel(bedrockShard);
-        ItemMod.initModel(roughDiamond);
-        ItemMod.initModel(roughDiamondGem);
+        ItemMod.initModel(netherDiamond);
+        ItemMod.initModel(netherDiamondGem);
         ItemMod.initModel(flightRing);
        // BlockMod.initModel(sleepingBag);
         BlockMod.initModel(floatingBlock);
         BlockMod.initModel(bedrockGlass);
         BlockMod.initModel(bedrockSand);
-        BlockMod.initModel(roughDiamondOre);
+        BlockMod.initModel(netherDiamondOre);
     }
 
     @Override

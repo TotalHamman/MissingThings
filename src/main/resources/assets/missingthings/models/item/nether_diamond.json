@@ -1,6 +1,6 @@
 {
 	"parent": "missingthings:item/_standard_item",
 	"textures": { 
-		"layer0": "missingthings:items/rough_diamond_gem"
+		"layer0": "missingthings:items/nether_diamond"
 	}
 }

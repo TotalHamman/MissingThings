@@ -31,18 +31,18 @@ public class CraftingRecipeHandler {
 
         addShapedRecipe(new ItemStack(ModItems.bedrockChisel),
                 " G ", "O  ", "   ",
-                'G', new ItemStack(ModItems.roughDiamondGem),
+                'G', new ItemStack(ModItems.netherDiamondGem),
                 'O', new ItemStack(Blocks.obsidian));
 
         addShapedRecipe(new ItemStack(ModBlocks.floatingBlock),
                 "OFO", "FGF", "OFO",
                 'O', new ItemStack(Blocks.obsidian),
-                'G', new ItemStack(ModItems.roughDiamondGem),
+                'G', new ItemStack(ModItems.netherDiamondGem),
                 'F', new ItemStack(Items.feather));
 
-        addShapedRecipe(new ItemStack(ModItems.roughDiamondGem),
+        addShapedRecipe(new ItemStack(ModItems.netherDiamondGem),
                 " G ", "GGG", " G ",
-                'G', new ItemStack(ModItems.roughDiamond));
+                'G', new ItemStack(ModItems.netherDiamond));
 
         addShapelessRecipe(new ItemStack(ModBlocks.bedrockSand),
                 Blocks.sand, ModItems.bedrockShard);

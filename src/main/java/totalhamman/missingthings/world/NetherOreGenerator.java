@@ -1,6 +1,5 @@
 package totalhamman.missingthings.world;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.state.pattern.BlockHelper;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockPos;
@@ -19,7 +18,7 @@ public class NetherOreGenerator implements IWorldGenerator {
     public WorldGenMinable roughDiamondGen;
 
     public NetherOreGenerator() {
-        roughDiamondGen = new WorldGenMinable(ModBlocks.roughDiamondOre.getStateFromMeta(0), 8, BlockHelper.forBlock(Blocks.netherrack));
+        roughDiamondGen = new WorldGenMinable(ModBlocks.netherDiamondOre.getStateFromMeta(0), 8, BlockHelper.forBlock(Blocks.netherrack));
     }
 
     public static void init() {

@@ -2,12 +2,13 @@ item.sleeping_bag.name=Sleeping Bag
 item.hang_glider.name=Hang Glider
 item.flight_ring.name=Ring of Flight
 item.bedrock_shard.name=Bedrock Shard
-item.rough_diamond.name=Rough Diamond
-item.rough_diamond_gem.name=Rough Diamond Gem
+item.nether_diamond.name=Nether Diamond
+item.nether_diamond_gem.name=Nether Diamond Gem
+item.bedrock_chisel.name=Bedrock Chisel
 
 tile.floating_block.name=Floating Block
 tile.bedrock_glass.name=Bedrock Glass
 tile.bedrock_sand.name=Bedrock Infused Sand
-tile.rough_diamond_ore.name=Rough Diamond Ore
+tile.nether_diamond_ore.name=Nether Diamond Ore
 
 itemGroup.tabMissing=Missing Things

@@ -3,16 +3,16 @@ package totalhamman.missingthings.items;
 import totalhamman.missingthings.MissingThings;
 import totalhamman.missingthings.items.equipment.baubles.BaubleFlightRing;
 import totalhamman.missingthings.items.materials.MaterialBedrockShard;
-import totalhamman.missingthings.items.materials.MaterialRoughDiamond;
-import totalhamman.missingthings.items.materials.MaterialRoughDiamondGem;
+import totalhamman.missingthings.items.materials.MaterialNetherDiamond;
+import totalhamman.missingthings.items.materials.MaterialNetherDiamondGem;
 import totalhamman.missingthings.items.equipment.tools.ToolBedrockChisel;
 
 public final class ModItems {
 
     public static ItemHangGlider hangGlider;
     public static MaterialBedrockShard bedrockShard;
-    public static MaterialRoughDiamond roughDiamond;
-    public static MaterialRoughDiamondGem roughDiamondGem;
+    public static MaterialNetherDiamond netherDiamond;
+    public static MaterialNetherDiamondGem netherDiamondGem;
     public static BaubleFlightRing flightRing;
     public static ToolBedrockChisel bedrockChisel;
 
@@ -22,8 +22,8 @@ public final class ModItems {
 
         MissingThings.log.debug("Creating Materials");
         bedrockShard = new MaterialBedrockShard();
-        roughDiamond = new MaterialRoughDiamond();
-        roughDiamondGem = new MaterialRoughDiamondGem();
+        netherDiamond = new MaterialNetherDiamond();
+        netherDiamondGem = new MaterialNetherDiamondGem();
 
         MissingThings.log.debug("Creating Equipment");
         flightRing = new BaubleFlightRing();
