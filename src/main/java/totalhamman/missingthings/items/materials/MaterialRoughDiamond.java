@@ -2,8 +2,9 @@ package totalhamman.missingthings.items.materials;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import totalhamman.missingthings.MissingThings;
+import totalhamman.missingthings.items.ItemMod;
 
-public class MaterialRoughDiamond extends MaterialMod {
+public class MaterialRoughDiamond extends ItemMod {
 
     public MaterialRoughDiamond() {
         super();

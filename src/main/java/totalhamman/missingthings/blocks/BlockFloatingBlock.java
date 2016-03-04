@@ -7,7 +7,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import totalhamman.missingthings.items.ItemFloatingBlock;
+import totalhamman.missingthings.items.blocks.ItemFloatingBlock;
 
 public class BlockFloatingBlock extends BlockMod {
 

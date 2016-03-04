@@ -1,0 +1,6 @@
+{
+	"parent": "missingthings:item/_standard_item",
+	"textures": { 
+		"layer0": "missingthings:items/bedrock_chisel"
+	}
+}

@@ -1,16 +1,12 @@
 package totalhamman.missingthings.blocks;
 
 import net.minecraft.block.material.Material;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import totalhamman.missingthings.items.ItemBedrockGlass;
-import totalhamman.missingthings.items.ItemFloatingBlock;
 
 public class BlockBedrockGlass extends BlockMod {
 

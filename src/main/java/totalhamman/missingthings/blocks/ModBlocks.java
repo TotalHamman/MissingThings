@@ -1,6 +1,7 @@
 package totalhamman.missingthings.blocks;
 
 import totalhamman.missingthings.MissingThings;
+import totalhamman.missingthings.blocks.ore.BlockRoughDiamondOre;
 
 public class ModBlocks {
 

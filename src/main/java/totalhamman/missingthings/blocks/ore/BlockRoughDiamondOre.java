@@ -5,6 +5,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import totalhamman.missingthings.blocks.BlockMod;
+import totalhamman.missingthings.items.ModItems;
 
 import java.util.Random;
 
@@ -20,7 +21,7 @@ public class BlockRoughDiamondOre extends BlockMod {
 
     @Override
     public Item getItemDropped(IBlockState state, Random random, int fortune) {
-        return ModMaterials.roughDiamond;
+        return ModItems.roughDiamond;
     }
 
     @Override

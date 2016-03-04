@@ -1,12 +1,10 @@
 package totalhamman.missingthings.library;
 
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import totalhamman.missingthings.blocks.ModBlocks;
-import totalhamman.missingthings.materials.ModMaterials;
+import totalhamman.missingthings.items.ModItems;
 
 public class CreativeTab extends CreativeTabs {
 
@@ -19,7 +17,7 @@ public class CreativeTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem () {
-        return ModMaterials.bedrockShard;
+        return ModItems.bedrockShard;
     }
 
 }
