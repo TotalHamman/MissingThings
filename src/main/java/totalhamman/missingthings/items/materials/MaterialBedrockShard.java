@@ -1,6 +1,5 @@
-package totalhamman.missingthings.materials;
+package totalhamman.missingthings.items.materials;
 
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import totalhamman.missingthings.MissingThings;
 

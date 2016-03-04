@@ -1,4 +1,4 @@
-package totalhamman.missingthings.equipment;
+package totalhamman.missingthings.items.equipment.baubles;
 
 import baubles.api.BaubleType;
 import baubles.common.lib.PlayerHandler;
@@ -16,11 +16,11 @@ import totalhamman.missingthings.items.ItemBauble;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EquipmentFlightRing extends ItemBauble {
+public class BaubleFlightRing extends ItemBauble {
 	
 	public static List<String> playersWithFlightList = new ArrayList();
 
-    public EquipmentFlightRing() {
+    public BaubleFlightRing() {
         super();
         this.setMaxStackSize(1);
         this.setUnlocalizedName("flight_ring");

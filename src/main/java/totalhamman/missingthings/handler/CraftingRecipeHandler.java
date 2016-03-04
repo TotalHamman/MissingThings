@@ -1,4 +1,4 @@
-package totalhamman.missingthings.crafting;
+package totalhamman.missingthings.handler;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -9,16 +9,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 import totalhamman.missingthings.blocks.ModBlocks;
-import totalhamman.missingthings.equipment.ModEquipment;
 import totalhamman.missingthings.items.ModItems;
-import totalhamman.missingthings.materials.MaterialMod;
-import totalhamman.missingthings.materials.MaterialRoughDiamond;
-import totalhamman.missingthings.materials.ModMaterials;
 
-public class ModCraftingRecipes {
+public class CraftingRecipeHandler {
     public static void init() {
 
-        addShapedRecipe(new ItemStack(ModEquipment.flightRing),
+        addShapedRecipe(new ItemStack(ModItems.flightRing),
                 "NGN", "G G", " G ",
                 'G', "ingotGold",
                 'N', new ItemStack(Items.nether_star));
@@ -28,23 +24,28 @@ public class ModCraftingRecipes {
                 'C', new ItemStack(Blocks.carpet),
                 'W', new ItemStack(Blocks.wool));*/
 
-        addShapedRecipe(new ItemStack(ModItems.hangGlider),
+        /*addShapedRecipe(new ItemStack(ModItems.hangGlider),
                 " L ", "LLL", "LSL",
                 'L', new ItemStack(Items.leather),
-                'S', new ItemStack(Items.stick));
+                'S', new ItemStack(Items.stick));*/
+
+        addShapedRecipe(new ItemStack(ModItems.bedrockChisel),
+                " G ", "O  ", "   ",
+                'G', new ItemStack(ModItems.roughDiamondGem),
+                'O', new ItemStack(Blocks.obsidian));
 
         addShapedRecipe(new ItemStack(ModBlocks.floatingBlock),
-                "OFO", "FNF", "OFO",
+                "OFO", "FGF", "OFO",
                 'O', new ItemStack(Blocks.obsidian),
-                'N', new ItemStack(Items.nether_star),
+                'G', new ItemStack(ModItems.roughDiamondGem),
                 'F', new ItemStack(Items.feather));
 
-        addShapedRecipe(new ItemStack(ModMaterials.roughDiamondGem),
+        addShapedRecipe(new ItemStack(ModItems.roughDiamondGem),
                 " G ", "GGG", " G ",
-                'G', new ItemStack(ModMaterials.roughDiamond));
+                'G', new ItemStack(ModItems.roughDiamond));
 
         addShapelessRecipe(new ItemStack(ModBlocks.bedrockSand),
-                Blocks.sand, ModMaterials.bedrockShard);
+                Blocks.sand, ModItems.bedrockShard);
 
         addSmeltingRecipe(ModBlocks.bedrockSand, new ItemStack(ModBlocks.bedrockGlass), 0.1F);
 

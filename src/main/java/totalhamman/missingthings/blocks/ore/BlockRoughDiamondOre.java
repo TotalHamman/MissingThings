@@ -1,11 +1,10 @@
-package totalhamman.missingthings.blocks;
+package totalhamman.missingthings.blocks.ore;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import totalhamman.missingthings.materials.ModMaterials;
+import totalhamman.missingthings.blocks.BlockMod;
 
 import java.util.Random;
 
